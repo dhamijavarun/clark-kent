@@ -46,6 +46,9 @@ clearQuery = () => {
         onChange={event => this.updateQuery(event.target.value)}
         placeholder="Search contacts"
          />
+         <a href="#create" onClick={this.props.onNavigate} className="add-contact">
+         Add Contact
+         </a>
             </div>    
             {showingContacts.length !== contacts.length && (
                 <div className="showing-contacts">
