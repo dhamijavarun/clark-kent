@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 import escapeRegExp from 'escape-string-regexp';
 import sortBy from 'sort-by';
 
@@ -46,9 +47,11 @@ clearQuery = () => {
         onChange={event => this.updateQuery(event.target.value)}
         placeholder="Search contacts"
          />
-         <a href="#create" onClick={this.props.onNavigate} className="add-contact">
+         <Link 
+         to="/create"
+         className="add-contact">
          Add Contact
-         </a>
+         </Link>
             </div>    
             {showingContacts.length !== contacts.length && (
                 <div className="showing-contacts">
