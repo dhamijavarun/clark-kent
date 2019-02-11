@@ -1,4 +1,4 @@
-# clark-kent
+# react-contacts-app
 Contacts App (with basic react functionality)
 Go inside the contacts app and run 'npm start'
 The application will be hosted at localhost:3000
